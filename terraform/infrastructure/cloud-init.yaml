@@ -10,7 +10,7 @@ write_files:
     content: |
       services:
         planets-mvc:
-          image: mudathirahmed/planets-mvc-cloud:latest
+          image: mudz1212/planets-mvc-cloud:latest
           ports:
             - "80:80"
           restart: always
@@ -20,7 +20,7 @@ write_files:
             - planets-network
 
         planets-db:
-          image: mudathirahmed/planets-db-cloud:latest
+          image: mudz1212/planets-db-cloud:latest
           restart: always
           networks:
             - planets-network
